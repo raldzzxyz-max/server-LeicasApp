@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://projectsxteam.clouderz.my.id:2039",
-  "wsUrl": "wss://ws-projectsxteam.clouderz.my.id:2039",
-  "socketUrl": "http://projectsxteam.clouderz.my.id:2039"
+  "baseUrl": "http://hamnzx.clouderz.my.id:2000",
+  "wsUrl": "wss://ws-hamnzx.clouderz.my.id:2000",
+  "socketUrl": "http://hamnzx.clouderz.my.id:2000"
 }
