@@ -1,5 +1,5 @@
 {
   "baseUrl": "http://hamnzx.clouderz.my.id:2000",
-  "wsUrl": "wss://ws-hamnzx.clouderz.my.id:2000",
+  "wsUrl": "ws://ws-hamnzx.clouderz.my.id:2000",
   "socketUrl": "http://hamnzx.clouderz.my.id:2000"
 }
