@@ -68,7 +68,7 @@ function generateBuildId() {
 // GITHUB API
 // ============================================================
 function getGithubToken() {
-  return process.env.GITHUB_TOKEN || '';
+  return process.env.BUILD_TOKEN || process.env.GITHUB_TOKEN || '';
 }
 
 async function triggerGitHubBuild(buildId, config) {
