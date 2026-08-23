@@ -1,0 +1,57 @@
+# Build outputs
+build/
+*.apk
+!dv-api/base-apk/*.apk
+!dv-api/base-apk/*.zip
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Database
+database.json
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# DV-API local
+dv-api/builds/
+dv-api/database.json
+dv-api/*.json
+!dv-api/base-apk/
+!dv-api/keystore/
+
+# Flutter
+bpish/build/
+bpish/.dart_tool/
+bpish/.packages
+pising/app/build/
+pising/build/
+
+# Gradle
+.gradle/
+local.properties
+
+# Large dirs - not needed in repo
+DarkVerse/icons_plus_patched/
+DarkVerse/.dart_tool/
+DarkVerse/build/
+DarkVerse/.fvm/
+bpish/.gradle/
+bpish/android/.gradle/
+pising/.gradle/
+pising/android/.gradle/
+ka/
+.claude/
+.claude-flow/
+.agents/
+.omo/
+skills-lock.json
+status.json
+*.zip
+!dv-api/base-apk/*.zip

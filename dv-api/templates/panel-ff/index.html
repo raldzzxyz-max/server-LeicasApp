@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Panel Free Fire</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0a0a1a;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px}
+.header{background:linear-gradient(135deg,#ff6b00,#ff0040);width:100%;max-width:400px;border-radius:16px;padding:24px;text-align:center;margin-bottom:20px;box-shadow:0 4px 20px rgba(255,107,0,0.3)}
+.header h1{font-size:24px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.header p{font-size:12px;opacity:0.8;margin-top:4px}
+.card{background:#12122a;border:1px solid #1e1e3a;border-radius:12px;padding:20px;width:100%;max-width:400px;margin-bottom:12px}
+.card h3{color:#ff6b00;font-size:14px;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.input-group{margin-bottom:12px}
+.input-group label{display:block;font-size:12px;color:#888;margin-bottom:4px}
+.input-group input,.input-group select{width:100%;padding:12px;background:#0a0a1a;border:1px solid #2a2a4a;border-radius:8px;color:#fff;font-size:14px;outline:none}
+.input-group input:focus,.input-group select:focus{border-color:#ff6b00}
+.btn{width:100%;padding:14px;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#ff6b00,#ff0040);color:#fff}
+.btn-primary:active{transform:scale(0.97);opacity:0.9}
+.btn-danger{background:#ff0040;color:#fff}
+.status{text-align:center;padding:16px;border-radius:8px;margin-top:12px;font-size:13px;display:none}
+.status.show{display:block}
+.status.success{background:#0a2a0a;border:1px solid #00ff4080;color:#00ff40}
+.status.error{background:#2a0a0a;border:1px solid #ff004080;color:#ff0040}
+.footer{margin-top:auto;padding:16px;text-align:center;font-size:11px;color:#444}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🔥 Panel FF</h1>
+<p>Free Fire Premium Tools</p>
+</div>
+
+<div class="card">
+<h3>🎯 Target Settings</h3>
+<div class="input-group">
+<label>Target Player ID / Username</label>
+<input type="text" id="target" placeholder="Enter player ID or username">
+</div>
+<div class="input-group">
+<label>Server Region</label>
+<select id="region">
+<option value="ID">🇮🇩 Indonesia</option>
+<option value="SG">🇸🇬 Singapore</option>
+<option value="MY">🇲🇾 Malaysia</option>
+<option value="TH">🇹🇭 Thailand</option>
+</select>
+</div>
+</div>
+
+<div class="card">
+<h3>💎 Diamond Settings</h3>
+<div class="input-group">
+<label>Amount</label>
+<select id="amount">
+<option value="100">100 Diamonds</option>
+<option value="500">500 Diamonds</option>
+<option value="1000">1,000 Diamonds</option>
+<option value="5000">5,000 Diamonds</option>
+<option value="99999">MAX Diamonds</option>
+</select>
+</div>
+</div>
+
+<button class="btn btn-primary" onclick="send()">⚡ SEND NOW</button>
+
+<div id="status" class="status"></div>
+
+<div class="footer">Panel Free Fire v2.0</div>
+
+<script>
+function send(){
+const target=document.getElementById('target').value;
+const amount=document.getElementById('amount').value;
+const status=document.getElementById('status');
+if(!target){status.className='status show error';status.textContent='⚠ Enter target first';return}
+status.className='status show success';status.textContent='✅ Sending '+amount+' diamonds to '+target+'...';
+setTimeout(()=>{status.textContent='✅ Success! Diamonds sent to '+target},3000);
+}
+</script>
+</body>
+</html>

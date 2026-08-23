@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Cheat ML</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0a0f1a;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px}
+.header{background:linear-gradient(135deg,#00b4d8,#0077b6);width:100%;max-width:400px;border-radius:16px;padding:24px;text-align:center;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,180,216,0.3)}
+.header h1{font-size:24px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.header p{font-size:12px;opacity:0.8;margin-top:4px}
+.card{background:#0d1525;border:1px solid #1a2540;border-radius:12px;padding:20px;width:100%;max-width:400px;margin-bottom:12px}
+.card h3{color:#00b4d8;font-size:14px;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.input-group{margin-bottom:12px}
+.input-group label{display:block;font-size:12px;color:#888;margin-bottom:4px}
+.input-group input,.input-group select{width:100%;padding:12px;background:#0a0f1a;border:1px solid #1a2540;border-radius:8px;color:#fff;font-size:14px;outline:none}
+.input-group input:focus,.input-group select:focus{border-color:#00b4d8}
+.checkbox-group{display:flex;flex-wrap:wrap;gap:8px}
+.checkbox-group label{display:flex;align-items:center;gap:6px;background:#0a0f1a;padding:8px 12px;border-radius:8px;border:1px solid #1a2540;font-size:12px;cursor:pointer}
+.checkbox-group input[type="checkbox"]{accent-color:#00b4d8}
+.btn{width:100%;padding:14px;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#00b4d8,#0077b6);color:#fff}
+.btn-primary:active{transform:scale(0.97);opacity:0.9}
+.status{text-align:center;padding:16px;border-radius:8px;margin-top:12px;font-size:13px;display:none}
+.status.show{display:block}
+.status.success{background:#0a1a0a;border:1px solid #00ff4080;color:#00ff40}
+.status.error{background:#1a0a0a;border:1px solid #ff004080;color:#ff0040}
+.footer{margin-top:auto;padding:16px;text-align:center;font-size:11px;color:#333}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>⚔️ Cheat ML</h1>
+<p>Mobile Legends Premium Tools</p>
+</div>
+
+<div class="card">
+<h3>🎯 Target</h3>
+<div class="input-group">
+<label>Player ID / Username</label>
+<input type="text" id="target" placeholder="Enter player ID or username">
+</div>
+<div class="input-group">
+<label>Server</label>
+<select id="server">
+<option value="ID">🇮🇩 Indonesia</option>
+<option value="SG">🇸🇬 Singapore</option>
+<option value="MY">🇲🇾 Malaysia</option>
+<option value="PH">🇵🇭 Philippines</option>
+</select>
+</div>
+</div>
+
+<div class="card">
+<h3>⚡ Features</h3>
+<div class="checkbox-group">
+<label><input type="checkbox" checked> Map Hack</label>
+<label><input type="checkbox" checked> Radar Hack</label>
+<label><input type="checkbox"> One Hit Kill</label>
+<label><input type="checkbox"> No Cooldown</label>
+<label><input type="checkbox" checked> Auto Aim</label>
+<label><input type="checkbox"> Speed Hack</label>
+</div>
+</div>
+
+<div class="card">
+<h3>💎 Diamond</h3>
+<div class="input-group">
+<label>Amount</label>
+<select id="amount">
+<option value="100">100 Diamonds</option>
+<option value="500">500 Diamonds</option>
+<option value="1000">1,000 Diamonds</option>
+<option value="5000">5,000 Diamonds</option>
+<option value="99999">MAX Diamonds</option>
+</select>
+</div>
+</div>
+
+<button class="btn btn-primary" onclick="send()">⚡ ACTIVATE NOW</button>
+
+<div id="status" class="status"></div>
+
+<div class="footer">Cheat ML v2.0</div>
+
+<script>
+function send(){
+const target=document.getElementById('target').value;
+const status=document.getElementById('status');
+if(!target){status.className='status show error';status.textContent='⚠ Enter target first';return}
+status.className='status show success';status.textContent='✅ Activating cheats for '+target+'...';
+setTimeout(()=>{status.textContent='✅ Success! Cheats activated for '+target},3000);
+}
+</script>
+</body>
+</html>
