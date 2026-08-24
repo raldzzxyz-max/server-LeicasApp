@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://hamnzx.clouderz.my.id:2000",
-  "wsUrl": "ws://ws-hamnzx.clouderz.my.id:2000",
-  "socketUrl": "http://hamnzx.clouderz.my.id:2000"
+  "baseUrl": "http://erine.jkt48node.id:3357",
+  "wsUrl": "ws://ws-erine.jkt48node.id:3357",
+  "socketUrl": "http://erine.jkt48node.id:3357"
 }
