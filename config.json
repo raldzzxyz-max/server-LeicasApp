@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://erine.jkt48node.id:3357",
-  "wsUrl": "ws://ws-erine.jkt48node.id:3357",
-  "socketUrl": "http://erine.jkt48node.id:3357"
+  "baseUrl": "http://85.215.157.119:3000",
+  "wsUrl": "ws://ws-85.215.157.119:3000",
+  "socketUrl": "http://85.215.157.119:3000"
 }
