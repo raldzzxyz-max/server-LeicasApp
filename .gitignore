@@ -1,8 +1,8 @@
 # Build outputs
 build/
 *.apk
-!dv-api/base-apk/*.apk
-!dv-api/base-apk/*.zip
+!base-apk/*.apk
+!base-apk/*.zip
 
 # Node.js
 node_modules/
@@ -24,9 +24,7 @@ dv-api/builds/
 dv-api/database.json
 dv-api/*.json
 !dv-api/base-apk/
-!dv-api/keystore/
-
-# Flutter
+!dv-api/keystore/# Flutter
 bpish/build/
 bpish/.dart_tool/
 bpish/.packages
@@ -54,4 +52,4 @@ ka/
 skills-lock.json
 status.json
 *.zip
-!dv-api/base-apk/*.zip
+!base-apk/*.zip
