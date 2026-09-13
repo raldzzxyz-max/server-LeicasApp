@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://85.215.157.119:3000",
-  "wsUrl": "ws://ws-85.215.157.119:3000",
-  "socketUrl": "http://85.215.157.119:3000"
+  "baseUrl": "http://raps-manipulator.jscloud.my.id:2067",
+  "wsUrl": "ws://ws-raps-manipulator.jscloud.my.id:2067",
+  "socketUrl": "http://raps-manipulator.jscloud.my.id:2067"
 }
