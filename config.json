@@ -1,5 +1,4 @@
 {
-  "baseUrl": "http://raps-manipulator.jscloud.my.id:2067",
-  "wsUrl": "ws://ws-raps-manipulator.jscloud.my.id:2067",
-  "socketUrl": "http://raps-manipulator.jscloud.my.id:2067"
+  "baseUrl": "http//panel.asta-official.my.id:9327",
+  "wsUrl": "ws://panel.asta-official.my.id:9327/ws"
 }
